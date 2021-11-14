@@ -1,0 +1,89 @@
+body {
+    background-color: #E9EFF6;
+    text-align: center;
+
+}
+
+#cancelButton {
+    border-radius: 10px;
+    background-color: white;
+    font-size: larger;
+    position: relative;
+    right: 180px;
+    bottom: 60px;
+    
+}
+
+#confirmButton{
+    border-radius: 10px;
+    background-color: white;
+    font-size: larger;
+    position: relative;
+    left: 180px;
+    bottom: 95px;
+
+
+}
+#title{
+    position: relative; 
+    top: -60px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+
+}
+#list {
+    position: relative; 
+    top: -40px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+
+    }
+#description{
+    position: relative; 
+    top: -50px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+}
+
+#detailsTitle{
+    position: relative; 
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+    top: -45px;
+
+}
+#detailsDesc{
+    position: relative; 
+    top: -35px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+
+
+
+}
+#detailsList{
+    position: relative; 
+    top: -25px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+
+}
+
+.entryBoxes{
+    text-align: center;
+}
