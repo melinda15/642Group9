@@ -3,14 +3,19 @@ var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); 
 var yy = today.getFullYear();
-day = mm + '/' + dd + '/' + yy;
+
+day =  mm + '/' + dd + '/' + yy;
 week = mm + '/' + dd + '/' + yy;
 month =  mm + '/' + yy;
 year = yy;
 
-function clickDay(){    
+document.getElementById("today").innerHTML = day;
+
+function clickDay(){
+    var completed = document.getElementById("completed")
     document.getElementById("date").innerHTML = day;
     document.getElementById("table").src="images/day_table.png";
+    document.getElementById("daily_completed").innerHTML = day;
 }
 
 function clickWeek(){
