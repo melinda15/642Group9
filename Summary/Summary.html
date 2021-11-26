@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <title>Summary</title>
+
 
     <style>
       body {
@@ -30,7 +32,7 @@
         border-left: 1px solid #565454;
         height: 120px;
         position: absolute;
-        left: 50%;
+        left: 60%;
       }
     </style>
   </head>
@@ -57,7 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8"></div>
-                <div class="col">Total Hours: 15h</div>
+                <div class="col" id="total_hours"></div>
             </div> 
         </div>
 
@@ -66,28 +68,39 @@
         </div>
 
         <div class="container" >
-            <div class="row">
-                <div class="col text-left ml-2"> 
-                  <p>Daily Completed</p>
-                  <span id="daily_completed"></span>
-                  <li>HW1 - 20 mins</li>
-                  <li>HW2 - 40 mins</li>
-                  <li>Project - 1 hour</li>
+            <div class="row ml-4">
+                <div class="col text-left"> 
+                  Daily Completed
+                  <div id="com_item1"></div>
+                  <div id="com_item2"></div>
+                  <div id="com_item3"></div>
+                  <!-- <div id="com_item4"></div>
+                  <div id="com_item5"></div>
+                  <div id="com_item6"></div>
+                  <div id="com_item7"></div> -->
                   </p>
                 </div>
 
-                <div class="col"> 
-                    <div class="vertical_line"></div> 
+                <div class="col-1"> 
+                    <!-- <div class="vertical_line"></div>  -->
                 </div>
   
     
                 <div class="col text-left"> 
-                  <p>Uncompleted</p>
-                  <li>HW3 - 20 mins</li>
-                  <li>HW4 - 40 mins</li>
+                  Uncompleted
+                  <div id="un_item1"></div>
+                  <div id="un_item2"></div>
+                  <div id="un_item3"></div>
+                  <!-- <div id="un_item4"></div>
+                  <div id="un_item5"></div>
+                  <div id="un_item6"></div>
+                  <div id="un_item7"></div> -->
                 </div>
             </div>
         </div>
+
+
+
 
 
     </div>
