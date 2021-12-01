@@ -17,6 +17,19 @@
           text-align: center;
           font-size: 1.1rem;
       }
+      .my-sidebar {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgba(17, 17, 17, 0.308);
+        color: black;
+        padding: 7px 25px;
+        border-radius: 7px;
+        border: none;
+        font-size: 1.2rem;
+        display:flex;
+        justify-content: flex-end;
+        
+      }
 
       .container {
         /* size of the page */
@@ -39,8 +52,13 @@
   
   <body>
     <div class="container-sm m-4">
-        <h2>Summary</h2>
-        
+
+      <div class="container">
+        <button class="my-sidebar" onclick="openNav_Irfan()">☰</button>  
+      </div>
+      
+      <h2>Summary</h2>
+
         <div class="btn-group btn-group-lg m-3" role="group" aria-label="...">
             <button type="button" class="btn btn-light" onclick="clickDay()">Day</button>
             <button type="button" class="btn btn-light" onclick="clickWeek()">Week</button>
@@ -98,10 +116,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
 
     </div>
 
