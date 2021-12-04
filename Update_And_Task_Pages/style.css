@@ -1,11 +1,106 @@
 body {
     background-color: #E9EFF6;
+    text-align: center;
+
 }
 
-#title {
-    width: 22%;
+#cancelButton {
+    border-radius: 10px;
+    background-color: white;
+    font-size: larger;
+    position: relative;
+    right: 180px;
+    bottom: 55px;
+    
 }
 
-#container {
+#confirmButton{
+    border-radius: 10px;
+    background-color: white;
+    font-size: larger;
+    position: relative;
+    left: 180px;
+    bottom: 85px;
+
+
+}
+#title{
+    position: relative; 
+    top: -60px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+
+}
+#list {
+    position: relative; 
+    top: -40px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+
+    }
+#description{
+    position: relative; 
+    top: -50px;
+    height: 50px;
+    width: 428px;
+    border-radius: 10px;
+}
+
+#detailsTitle{
+    position: relative; 
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+    top: -45px;
+
+}
+#detailsDesc{
+    position: relative; 
+    top: -35px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+
+
+
+}
+#detailsList{
+    position: relative; 
+    top: -25px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 9px;
+}
+
+.entryBoxes{
     text-align: center;
 }
+
+#taskbutton {
+    margin-top: 100px;
+}
+
+.my-sidebar {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0.308);
+    color: black;
+    padding: 7px 25px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    margin-left: -413px;
+  }
+

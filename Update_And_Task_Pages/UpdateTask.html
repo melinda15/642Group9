@@ -8,19 +8,32 @@
         <title>Update Task</title>
     </head>
     <body>
-        <div id="container">
-            <h2>Update Task</h2>
-            <div>
-                <input type="text" id="title" placeholder="Enter your updated title"><br><br>
+        <form >
+            <header class="header">
+                <h2 class="header"> Update Task </h2>
+            </header>
+            <div>    
+                <a href="../Update_And_Task_Pages/TaskPage.html">
+                <button id="cancelButton" type="button"> Cancel </button>
+                </a>
             </div>
             <div>
-                <textarea id="description" placeholder="Enter your updated description" rows="4" cols="35"></textarea><br><br>
+                <a href="../Update_And_Task_Pages/TaskPage.html">
+                <button id="confirmButton" type="button"> Confirm </button>
+                </a>
             </div>
-                <textarea id="list" placeholder="Enter your updated list" rows="4" cols="35"></textarea><br><br>
-            <div>
-                <a href="#"><button>Confirm</button></a> <!-- needs a path when the button is clicked on -->
-                <a href="#"><button>Cancel</button></a> <!-- needs a path when the button is clicked on -->
+        
+            <div class="entryBoxes">
+                <div>        
+                    <input id="title" class="title" placeholder="Updated Title" type="text" name="title" required>
+                </div>
+                <div>
+                    <input id="description" class="input" placeholder="Updated Description" type="text" name="description" required>
+                </div>
+                <div>       
+                    <input id="list" class="input" placeholder="Updated List" type="text" name="List" required>
+                </div>
             </div>
-        </div>
+        </form>
     </body>
 </html>
