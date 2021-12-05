@@ -91,16 +91,4 @@ body {
     margin-top: 100px;
 }
 
-.my-sidebar {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgba(17, 17, 17, 0.308);
-    color: black;
-    padding: 7px 25px;
-    border-radius: 7px;
-    border: none;
-    font-size: 1.2rem;
-    justify-content: flex-end;
-    margin-left: -413px;
-  }
 
