@@ -139,5 +139,19 @@ function clickYear(){
 
 }
 
+// sideBar function
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("sideBarButton").style.marginLeft = "250px";
+    test.style.display = 'none';
+
+  }
+  
+  
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("sideBarButton").style.marginLeft= "0";
+}
+
 
 

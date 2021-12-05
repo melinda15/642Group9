@@ -1,34 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <title>Summary</title>
-
 
     <style>
       body {
           background-color: #E9EFF6;
           text-align: center;
           font-size: 1.1rem;
-      }
-      .my-sidebar {
-        font-size: 20px;
-        cursor: pointer;
-        background-color: rgba(17, 17, 17, 0.308);
-        color: black;
-        padding: 7px 25px;
-        border-radius: 7px;
-        border: none;
-        font-size: 1.2rem;
-        display:flex;
-        justify-content: flex-end;
-        
       }
 
       .container {
@@ -47,18 +33,77 @@
         position: absolute;
         left: 60%;
       }
+
+    /* sidebar */
+
+
+    .my-sidebar {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgba(17, 17, 17, 0.308);
+        color: black;
+        padding: 7px 25px;
+        border-radius: 7px;
+        border: none;
+        font-size: 1.2rem;
+        display:flex;
+        justify-content: flex-end;  
+      }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
     </style>
   </head>
-  
-  <body>
-    <div class="container-sm m-4">
 
-      <div class="container">
-        <button class="my-sidebar" onclick="openNav_Irfan()">☰</button>  
+  <body>
+    
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="../Summary/Summary.html">Summary</a>
+      <a href="#">Tasks</a>
+      <a href="../CSC642-phase4/index.html">Timer</a>
+    </div>
+    
+
+    <div class="container-sm m-4">
+      <div id="sideBarButton">
+        <button class="my-sidebar" onclick="openNav()">☰</button>  
       </div>
       
       <h2>Summary</h2>
-
+      
         <div class="btn-group btn-group-lg m-3" role="group" aria-label="...">
             <button type="button" class="btn btn-light" onclick="clickDay()">Day</button>
             <button type="button" class="btn btn-light" onclick="clickWeek()">Week</button>
@@ -125,5 +170,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
   </body>
 </html>
